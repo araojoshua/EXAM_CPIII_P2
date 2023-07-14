@@ -4,29 +4,24 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] numbers = new int[3];
-        
-        Console.WriteLine("Enter three numbers:");
-        for (int i = 0; i < 3; i++)
-        {
-            Console.Write("Number {0}: ", i + 1);
-            numbers[i] = Convert.ToInt32(Console.ReadLine());
-        }
-        
+        int[] numbers = new int[] { 5, 4, 3 };
+
+        Console.WriteLine("Before rotation: {0}", string.Join("", numbers));
+
         RotateArrayLeft(numbers);
-        
-        Console.WriteLine("Output: {0}{1}{2}", numbers[0], numbers[1], numbers[2]);
+
+        Console.WriteLine("After rotation: {0}", string.Join("", numbers));
     }
-    
+
     static void RotateArrayLeft(int[] arr)
     {
-        int temp = arr[0];
-        
+        int firstElement = arr[0];
+
         for (int i = 0; i < arr.Length - 1; i++)
         {
             arr[i] = arr[i + 1];
         }
-        
-        arr[arr.Length - 1] = temp;
+
+        arr[arr.Length - 1] = firstElement;
     }
 }
