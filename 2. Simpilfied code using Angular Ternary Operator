@@ -1,0 +1,35 @@
+<div layout="row" layout-margin flex="100" ng-show="data.physical_status_id == 1">
+	<div class="col-md-4">
+		<label>Physical Status</label>
+	</div>
+	<div class="col-md-8">
+		{{ data.physical_status_id == 1 ? 'Completed' : '' }}
+	</div>
+</div>
+
+<div layout="row" layout-margin flex="100" ng-show="data.physical_status_id == 2">
+	<div class="col-md-4">
+		<label>Physical Status</label>
+	</div>
+	<div class="col-md-8">
+		{{ data.physical_status_id == 2 ? 'On-going' : '' }}
+	</div>
+</div>
+
+<div layout="row" layout-margin flex="100" ng-show="data.physical_status_id == 3">
+	<div class="col-md-4">
+		<label>Physical Status</label>
+	</div>
+	<div class="col-md-8">
+		{{ data.physical_status_id == 3 ? 'Not yet started' : '' }}
+	</div>
+</div>
+
+<div layout="row" layout-margin flex="100" ng-show="data.physical_status_id == 4">
+	<div class="col-md-4">
+		<label>Physical Status</label>
+	</div>
+	<div class="col-md-8">
+		{{ data.physical_status_id == 4 ? 'Waived/Damaged' : '' }}
+	</div>
+</div>
